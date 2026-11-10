@@ -13,7 +13,7 @@
 ![PySide6](https://img.shields.io/badge/UI-PySide6-41CD52?logo=qt&logoColor=white)
 ![MySQL](https://img.shields.io/badge/DB-MySQL%208-4479A1?logo=mysql&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![CI](https://github.com/nibrill/corepos-community/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/nibrill/sistema-punto-de-venta-open-source-code/actions/workflows/ci.yml/badge.svg)
 
 Punto de venta de escritorio para pymes (Windows), hecho en **Python + PySide6 + MySQL**.
 Edición comunitaria y gratuita, con IVA 19 % (Chile).
