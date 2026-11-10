@@ -7,7 +7,7 @@
   </a>
 </p>
 
-# CorePOS Community
+# Sistema Punto de Venta Open Source Code
 
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
 ![PySide6](https://img.shields.io/badge/UI-PySide6-41CD52?logo=qt&logoColor=white)
@@ -97,8 +97,9 @@ instalador ni soporte. Esas funciones pertenecen a la edición comercial.
 - [ ] Internacionalización (otros países / impuestos)
 
 ## Acerca de Core Consulting
-CorePOS es una aplicación desarrollada por **[Core Consulting](https://coreconsulting.cl)**. Esta edición
-comunitaria es gratuita y de código abierto (MIT). La **edición comercial** agrega facturación electrónica
+El **Sistema Punto de Venta Open Source Code** es una aplicación desarrollada por
+**[Core Consulting](https://coreconsulting.cl)**. Esta versión es gratuita y de código abierto (MIT).
+Su edición comercial, **CorePOS**, agrega facturación electrónica
 SII (boleta, factura, guía de despacho y notas de crédito), licenciamiento por equipo, instalador para
 Windows, historial de ventas con anulación y reimpresión, registro de auditoría, conciliación de tarjetas
 y soporte. Más información en [coreconsulting.cl](https://coreconsulting.cl).
