@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://coreconsulting.cl">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="docs/img/logo-core-consulting-oscuro.png">
+      <img src="docs/img/logo-core-consulting.png" alt="Core Consulting" width="280">
+    </picture>
+  </a>
+</p>
+
 # CorePOS Community
 
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
@@ -99,3 +108,8 @@ Lea [CONTRIBUTING.md](CONTRIBUTING.md). Los issues con la etiqueta `good first i
 
 ## Licencia
 MIT. Ver [LICENSE](LICENSE).
+
+> El nombre y el logo de **Core Consulting** (archivos `docs/img/logo-core-consulting*.png`,
+> `docs/img/social-preview.png` y `app/ui/assets/core-consulting-mark.png`) son marca de Core Consulting
+> y **no** están cubiertos por la licencia MIT: no pueden reutilizarse para identificar productos derivados.
+> Si redistribuye una versión modificada, reemplácelos por su propia marca.

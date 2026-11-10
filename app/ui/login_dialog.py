@@ -7,7 +7,9 @@ from PySide6.QtWidgets import (
     QLineEdit,
     QPushButton,
     QMessageBox,
-    QFrame
+    QFrame,
+    QHBoxLayout,
+    QWidget
 )
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap
@@ -24,7 +26,7 @@ class LoginDialog(QDialog):
         self.config_negocio = self.obtener_configuracion_negocio_segura()
 
         self.setWindowTitle("Ingreso al POS")
-        self.setFixedSize(430, 540)
+        self.setFixedSize(430, 580)
 
         self.logo_label = None
         self.titulo = None
@@ -101,6 +103,30 @@ class LoginDialog(QDialog):
             Qt.TransformationMode.SmoothTransformation,
         )
 
+    def crear_marca_core_consulting(self):
+        """Pie con el isotipo y el texto 'Desarrollado por Core Consulting'."""
+        contenedor = QWidget()
+        fila = QHBoxLayout(contenedor)
+        fila.setContentsMargins(0, 0, 0, 0)
+        fila.setSpacing(8)
+        fila.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        ruta = Path(__file__).resolve().parent / "assets" / "core-consulting-mark.png"
+        pixmap = QPixmap(str(ruta))
+
+        if not pixmap.isNull():
+            icono = QLabel()
+            pixmap = pixmap.scaledToHeight(44, Qt.TransformationMode.SmoothTransformation)
+            pixmap.setDevicePixelRatio(2.0)  # 22 px lógicos, nítido en pantallas HiDPI
+            icono.setPixmap(pixmap)
+            fila.addWidget(icono)
+
+        texto = QLabel("Desarrollado por <b>Core Consulting</b>")
+        texto.setObjectName("ayudaLogin")
+        fila.addWidget(texto)
+
+        return contenedor
+
     def construir_interfaz(self):
         layout = QVBoxLayout(self)
         layout.setContentsMargins(34, 34, 34, 34)
@@ -150,10 +176,12 @@ class LoginDialog(QDialog):
         btn_login.setMinimumHeight(46)
         btn_login.clicked.connect(self.iniciar_sesion)
 
-        ayuda = QLabel("CorePOS Community · Desarrollado por Core Consulting")
+        ayuda = QLabel("CorePOS Community")
         ayuda.setAlignment(Qt.AlignmentFlag.AlignCenter)
         ayuda.setWordWrap(True)
         ayuda.setObjectName("ayudaLogin")
+
+        marca = self.crear_marca_core_consulting()
 
         card_layout.addWidget(self.logo_label, 0, Qt.AlignmentFlag.AlignCenter)
         card_layout.addWidget(self.titulo)
@@ -163,6 +191,7 @@ class LoginDialog(QDialog):
         card_layout.addWidget(self.input_password)
         card_layout.addWidget(btn_login)
         card_layout.addWidget(ayuda)
+        card_layout.addWidget(marca)
 
         layout.addWidget(card)
 
