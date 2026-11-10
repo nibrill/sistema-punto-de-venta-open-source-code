@@ -24,7 +24,7 @@ class LoginDialog(QDialog):
         self.config_negocio = self.obtener_configuracion_negocio_segura()
 
         self.setWindowTitle("Ingreso al POS")
-        self.setFixedSize(430, 460)
+        self.setFixedSize(430, 540)
 
         self.logo_label = None
         self.titulo = None

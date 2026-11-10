@@ -9,6 +9,28 @@
 Punto de venta de escritorio para pymes (Windows), hecho en **Python + PySide6 + MySQL**.
 Edición comunitaria y gratuita, con IVA 19 % (Chile).
 
+## Vista previa
+
+> Capturas con datos de demostración **ficticios** (negocio "Minimarket Demo", productos, clientes y ventas inventados).
+
+<p align="center">
+  <img src="docs/img/02-dashboard.png" alt="Dashboard con resumen del día, caja y alertas de stock" width="900">
+</p>
+
+| | |
+|---|---|
+| ![Venta rápida con carrito](docs/img/03-ventas.png)<br>**Ventas**: lector de código de barras, carrito, IVA y cobro | ![Catálogo de productos](docs/img/04-productos.png)<br>**Productos**: catálogo, márgenes, stock y alertas |
+| ![Control de inventario](docs/img/05-inventario.png)<br>**Inventario**: ingresos, ajustes, mermas y reposición | ![Caja](docs/img/06-caja.png)<br>**Caja**: apertura, arqueo, ingresos y retiros |
+| ![Reportes](docs/img/07-reportes.png)<br>**Reportes**: ventas, ganancia y exportación a Excel/PDF | ![Gráficos](docs/img/08-graficos.png)<br>**Gráficos**: ventas por hora y por método de pago |
+| ![Clientes](docs/img/09-clientes.png)<br>**Clientes**: fichas y datos de contacto | ![Usuarios y roles](docs/img/10-usuarios.png)<br>**Usuarios**: roles `ADMIN`, `VENDEDOR` y `ENCARGADO_STOCK` |
+
+<details>
+<summary>Pantalla de ingreso</summary>
+
+<img src="docs/img/01-login.png" alt="Pantalla de ingreso" width="360">
+
+</details>
+
 ## Funcionalidades
 | Área | Detalle |
 |---|---|

@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 
 def obtener_ruta_env():
-    """
+    r"""
     Busca el archivo .env en orden de prioridad.
 
     1. C:\ProgramData\CorePOS\.env
@@ -61,7 +61,7 @@ DB_CONFIG = {
 def obtener_conexion():
     if not DB_CONFIG["password"]:
         print("ERROR: DB_PASSWORD no está configurado. Revise el archivo .env "
-              "(C:\ProgramData\CorePOS\.env).")
+              r"(C:\ProgramData\CorePOS\.env).")
         return None
 
     try:
