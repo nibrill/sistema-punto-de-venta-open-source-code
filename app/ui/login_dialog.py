@@ -150,7 +150,7 @@ class LoginDialog(QDialog):
         btn_login.setMinimumHeight(46)
         btn_login.clicked.connect(self.iniciar_sesion)
 
-        ayuda = QLabel("Usuario demo: admin - clave: admin123")
+        ayuda = QLabel("CorePOS Community")
         ayuda.setAlignment(Qt.AlignmentFlag.AlignCenter)
         ayuda.setWordWrap(True)
         ayuda.setObjectName("ayudaLogin")
