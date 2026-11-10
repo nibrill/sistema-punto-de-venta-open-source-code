@@ -9,6 +9,8 @@
 Punto de venta de escritorio para pymes (Windows), hecho en **Python + PySide6 + MySQL**.
 Edición comunitaria y gratuita, con IVA 19 % (Chile).
 
+**Aplicación desarrollada por [Core Consulting](https://coreconsulting.cl).**
+
 ## Vista previa
 
 > Capturas con datos de demostración **ficticios** (negocio "Minimarket Demo", productos, clientes y ventas inventados).
@@ -80,9 +82,17 @@ instalador ni soporte. Esas funciones pertenecen a la edición comercial.
 
 ## Roadmap
 - [ ] Tests automatizados de la capa de negocio con base de datos de prueba
-- [ ] Capturas de pantalla y demo en video
+- [x] Capturas de pantalla
+- [ ] Demo en video
 - [ ] Release con ejecutable para Windows
 - [ ] Internacionalización (otros países / impuestos)
+
+## Acerca de Core Consulting
+CorePOS es una aplicación desarrollada por **[Core Consulting](https://coreconsulting.cl)**. Esta edición
+comunitaria es gratuita y de código abierto (MIT). La **edición comercial** agrega facturación electrónica
+SII (boleta, factura, guía de despacho y notas de crédito), licenciamiento por equipo, instalador para
+Windows, historial de ventas con anulación y reimpresión, registro de auditoría, conciliación de tarjetas
+y soporte. Más información en [coreconsulting.cl](https://coreconsulting.cl).
 
 ## Contribuir
 Lea [CONTRIBUTING.md](CONTRIBUTING.md). Los issues con la etiqueta `good first issue` son un buen punto de partida.
